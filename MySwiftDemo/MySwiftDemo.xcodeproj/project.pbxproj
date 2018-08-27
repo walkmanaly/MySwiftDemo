@@ -14,6 +14,7 @@
 		3AB5DB832133DC13003A30E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5DB812133DC13003A30E1 /* LaunchScreen.storyboard */; };
 		3AB5DB8E2133DC13003A30E1 /* MySwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB8D2133DC13003A30E1 /* MySwiftDemoTests.swift */; };
 		3AB5DB992133DC13003A30E1 /* MySwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB982133DC13003A30E1 /* MySwiftDemoUITests.swift */; };
+		3AB5DBAC2133F573003A30E1 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DBAB2133F573003A30E1 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3AB5DB942133DC13003A30E1 /* MySwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB5DB982133DC13003A30E1 /* MySwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftDemoUITests.swift; sourceTree = "<group>"; };
 		3AB5DB9A2133DC13003A30E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AB5DBAB2133F573003A30E1 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3AB5DBAA2133ED81003A30E1 /* View */,
 				3AB5DB782133DC11003A30E1 /* AppDelegate.swift */,
 				3AB5DB7A2133DC11003A30E1 /* ViewController.swift */,
 				3AB5DB7C2133DC11003A30E1 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				3AB5DB9A2133DC13003A30E1 /* Info.plist */,
 			);
 			path = MySwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		3AB5DBAA2133ED81003A30E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5DBAB2133F573003A30E1 /* MyTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			files = (
 				3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */,
 				3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */,
+				3AB5DBAC2133F573003A30E1 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
