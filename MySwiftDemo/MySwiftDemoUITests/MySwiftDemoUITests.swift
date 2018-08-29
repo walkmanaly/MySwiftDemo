@@ -2,7 +2,7 @@
 //  MySwiftDemoUITests.swift
 //  MySwiftDemoUITests
 //
-//  Created by 黄锦兴 on 2018/8/27.
+//  Created by nick on 2018/8/27.
 //  Copyright © 2018年 nick. All rights reserved.
 //
 
