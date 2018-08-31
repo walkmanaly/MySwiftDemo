@@ -32,7 +32,7 @@ class MyTableViewCell: UITableViewCell {
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        myLabel = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
+        myLabel = UILabel(frame: CGRect(x: 100, y: 0, width: UIScreen.main.bounds.size.width, height: 50))
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.addSubview(myLabel!)
     }

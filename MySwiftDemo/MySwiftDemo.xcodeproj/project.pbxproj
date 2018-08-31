@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */; };
 		3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB782133DC11003A30E1 /* AppDelegate.swift */; };
 		3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB7A2133DC11003A30E1 /* ViewController.swift */; };
 		3AB5DB7E2133DC11003A30E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5DB7C2133DC11003A30E1 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRxswiftViewController.swift; sourceTree = "<group>"; };
 		3AB5DB752133DC11003A30E1 /* MySwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB5DB782133DC11003A30E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB5DB7A2133DC11003A30E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010558392138D03700425D92 /* TableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5DBAA2133ED81003A30E1 /* View */,
+			);
+			path = TableViewDemo;
+			sourceTree = "<group>";
+		};
+		0105583B2138D08D00425D92 /* Supportingfiles */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5DB7C2133DC11003A30E1 /* Main.storyboard */,
+				3AB5DB7F2133DC13003A30E1 /* Assets.xcassets */,
+				3AB5DB812133DC13003A30E1 /* LaunchScreen.storyboard */,
+				3AB5DB842133DC13003A30E1 /* Info.plist */,
+			);
+			name = Supportingfiles;
+			sourceTree = "<group>";
+		};
+		0105583C2138D0BD00425D92 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3AB5DB782133DC11003A30E1 /* AppDelegate.swift */,
+				3AB5DB7A2133DC11003A30E1 /* ViewController.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		0105583D2138D0D500425D92 /* RxswiftDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */,
+			);
+			name = RxswiftDemo;
+			sourceTree = "<group>";
+		};
 		3AB5DB6C2133DC10003A30E1 = {
 			isa = PBXGroup;
 			children = (
@@ -106,13 +144,10 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3AB5DBAA2133ED81003A30E1 /* View */,
-				3AB5DB782133DC11003A30E1 /* AppDelegate.swift */,
-				3AB5DB7A2133DC11003A30E1 /* ViewController.swift */,
-				3AB5DB7C2133DC11003A30E1 /* Main.storyboard */,
-				3AB5DB7F2133DC13003A30E1 /* Assets.xcassets */,
-				3AB5DB812133DC13003A30E1 /* LaunchScreen.storyboard */,
-				3AB5DB842133DC13003A30E1 /* Info.plist */,
+				0105583D2138D0D500425D92 /* RxswiftDemo */,
+				0105583C2138D0BD00425D92 /* Main */,
+				0105583B2138D08D00425D92 /* Supportingfiles */,
+				010558392138D03700425D92 /* TableViewDemo */,
 			);
 			path = MySwiftDemo;
 			sourceTree = "<group>";
@@ -350,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */,
 				3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */,
 				3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */,
 				3AB5DBAC2133F573003A30E1 /* MyTableViewCell.swift in Sources */,
@@ -530,7 +566,10 @@
 				DEVELOPMENT_TEAM = U7J77R4NH6;
 				INFOPLIST_FILE = MySwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.main.MySwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -547,7 +586,10 @@
 				DEVELOPMENT_TEAM = U7J77R4NH6;
 				INFOPLIST_FILE = MySwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.main.MySwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -563,7 +605,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7J77R4NH6;
 				INFOPLIST_FILE = MySwiftDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.main.MySwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -580,7 +626,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7J77R4NH6;
 				INFOPLIST_FILE = MySwiftDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.main.MySwiftDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -596,7 +646,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7J77R4NH6;
 				INFOPLIST_FILE = MySwiftDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.main.MySwiftDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -612,7 +666,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U7J77R4NH6;
 				INFOPLIST_FILE = MySwiftDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nick.main.MySwiftDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -83,4 +83,9 @@ extension ViewController : UITableViewDelegate {
         dataSource?.insert(moveNum, at: destinationIndexPath.row)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rxVc = MyRxswiftViewController()
+        navigationController?.pushViewController(rxVc, animated: true)
+    }
+    
 }
