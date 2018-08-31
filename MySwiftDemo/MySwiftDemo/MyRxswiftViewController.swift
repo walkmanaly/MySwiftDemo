@@ -18,7 +18,7 @@ class MyRxswiftViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
 
-        myButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+        myButton = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
         myButton.setBackgroundImage(UIImage(named: "icon"), for: .normal)
         myButton.setTitle("RxswiftButton", for: .normal)
         

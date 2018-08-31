@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
@@ -17,11 +19,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         layoutTableView()
         genarateData()
+        obserContentoffset()
+    }
+    
+    func obserContentoffset() {
+        myTableView.rx.contentOffset.subscribe(onNext: { contentoffset in
+            print("content:\(contentoffset)")
+        })
+        .disposed(by: DisposeBag())
     }
     
     func genarateData() {
         dataSource = [Int]()
-        for _ in 1...9 {
+        for _ in 1...20 {
             dataSource?.append(Int(arc4random_uniform(100)))
         }
     }
