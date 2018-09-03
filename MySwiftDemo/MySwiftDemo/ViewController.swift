@@ -14,6 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var myTableView: UITableView!
     var dataSource: [Int]?
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class ViewController: UIViewController {
         myTableView.rx.contentOffset.subscribe(onNext: { contentoffset in
             print("content:\(contentoffset)")
         })
-        .disposed(by: DisposeBag())
+        .disposed(by: disposeBag)
     }
     
     func genarateData() {

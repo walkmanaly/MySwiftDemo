@@ -13,6 +13,7 @@ import RxCocoa
 class MyRxswiftViewController: UIViewController {
 
     var myButton: UIButton!
+    let disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +22,19 @@ class MyRxswiftViewController: UIViewController {
         myButton = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
         myButton.setBackgroundImage(UIImage(named: "icon"), for: .normal)
         myButton.setTitle("RxswiftButton", for: .normal)
+        view.addSubview(myButton)
         
-        let disposeBag = DisposeBag()
         myButton.rx.tap
             .subscribe(onNext: {
-            print("onnext")
+            print("button tap")
         })
         .disposed(by: disposeBag)
         
-        view.addSubview(myButton)
     }
 
-    func rxswiftButtonClick() {
-        print("rxswiftButtonClick")
-    }
+//    func rxswiftButtonClick() {
+//        print("rxswiftButtonClick")
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
