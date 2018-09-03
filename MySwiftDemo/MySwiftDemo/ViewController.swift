@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     }
     
     func obserContentoffset() {
+        // 用rx的方式，实现tableView的scrollViewDidScroll代理方法
         myTableView.rx.contentOffset.subscribe(onNext: { contentoffset in
             print("content:\(contentoffset)")
         })
