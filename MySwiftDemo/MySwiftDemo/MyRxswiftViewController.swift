@@ -14,6 +14,7 @@ class MyRxswiftViewController: UIViewController {
 
     var myButton: UIButton!
     var myTextField: UITextField!
+    @objc var name: String = "Nick"
     let disposeBag: DisposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -34,14 +35,34 @@ class MyRxswiftViewController: UIViewController {
         
         demo1()
         demo2()
+        demo3()
+
+        let items = ["jack", "rose", "nick"]
+        // 数组越界，运行时错误
+//        let five = items.remove(at: 5)
+//        print(five)
+        
+        for item in items {
+            print(item)
+        }
+        // 如果需要index
+        for (index, item) in items.enumerated() {
+            print("index=\(index)item=\(item)")
+        }
         
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        name = "Jack"
+    }
+    
     func demo1() {
         // rx button tap
         myButton.rx.tap
             .subscribe(onNext: {
                 print("button tap")
+                let scrollDemoVc = DemoScrollViewController()
+                self.navigationController?.pushViewController(scrollDemoVc, animated: true)
             })
             .disposed(by: disposeBag)
     }
@@ -54,6 +75,17 @@ class MyRxswiftViewController: UIViewController {
         
     }
     
+    func demo3() {
+        // kvo
+        
+        self.rx.observe(String.self, #keyPath(name)).subscribe(onNext: { newVlue in
+            
+            if let vlue = newVlue {
+                print(vlue)
+            }
+            
+        }).disposed(by: disposeBag)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
