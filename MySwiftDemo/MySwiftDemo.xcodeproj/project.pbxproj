@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */; };
+		0142220C2152238F0091027F /* EnumerationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142220B2152238F0091027F /* EnumerationViewController.swift */; };
 		017B7BB4213EE93000A1671B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 017B7BB3213EE93000A1671B /* test.png */; };
 		017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */; };
 		017B7BB8213EE95B00A1671B /* DemoScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017B7BB6213EE95B00A1671B /* DemoScrollViewController.xib */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRxswiftViewController.swift; sourceTree = "<group>"; };
+		0142220B2152238F0091027F /* EnumerationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationViewController.swift; sourceTree = "<group>"; };
 		017B7BB3213EE93000A1671B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewController.swift; sourceTree = "<group>"; };
 		017B7BB6213EE95B00A1671B /* DemoScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoScrollViewController.xib; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 			name = RxswiftDemo;
 			sourceTree = "<group>";
 		};
+		0142220A2152236F0091027F /* Enumeration */ = {
+			isa = PBXGroup;
+			children = (
+				0142220B2152238F0091027F /* EnumerationViewController.swift */,
+			);
+			name = Enumeration;
+			sourceTree = "<group>";
+		};
 		017B7BB2213EE8F000A1671B /* ScrollViewDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0142220A2152236F0091027F /* Enumeration */,
 				017B7BB2213EE8F000A1671B /* ScrollViewDemo */,
 				0105583D2138D0D500425D92 /* RxswiftDemo */,
 				0105583C2138D0BD00425D92 /* Main */,
@@ -408,6 +419,7 @@
 				3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */,
 				017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */,
 				3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */,
+				0142220C2152238F0091027F /* EnumerationViewController.swift in Sources */,
 				3AB5DBAC2133F573003A30E1 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
