@@ -12,6 +12,12 @@
 		017B7BB4213EE93000A1671B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 017B7BB3213EE93000A1671B /* test.png */; };
 		017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */; };
 		017B7BB8213EE95B00A1671B /* DemoScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 017B7BB6213EE95B00A1671B /* DemoScrollViewController.xib */; };
+		01C2BD6E215C6A8E002C024B /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2BD6D215C6A8E002C024B /* Music.swift */; };
+		01C2BD70215C6B93002C024B /* MusicLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2BD6F215C6B93002C024B /* MusicLists.swift */; };
+		01C2BD73215C6CCA002C024B /* MusicListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2BD71215C6CCA002C024B /* MusicListsViewController.swift */; };
+		01C2BD7F215CA865002C024B /* MusicListsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C2BD7E215CA865002C024B /* MusicListsViewController.storyboard */; };
+		01C2BDC7215CE18A002C024B /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2BDC5215CE18A002C024B /* MusicListViewController.swift */; };
+		01C2BDC8215CE18A002C024B /* MusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C2BDC6215CE18A002C024B /* MusicListViewController.xib */; };
 		3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB782133DC11003A30E1 /* AppDelegate.swift */; };
 		3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB7A2133DC11003A30E1 /* ViewController.swift */; };
 		3AB5DB7E2133DC11003A30E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5DB7C2133DC11003A30E1 /* Main.storyboard */; };
@@ -46,6 +52,12 @@
 		017B7BB3213EE93000A1671B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewController.swift; sourceTree = "<group>"; };
 		017B7BB6213EE95B00A1671B /* DemoScrollViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoScrollViewController.xib; sourceTree = "<group>"; };
+		01C2BD6D215C6A8E002C024B /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		01C2BD6F215C6B93002C024B /* MusicLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLists.swift; sourceTree = "<group>"; };
+		01C2BD71215C6CCA002C024B /* MusicListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListsViewController.swift; sourceTree = "<group>"; };
+		01C2BD7E215CA865002C024B /* MusicListsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicListsViewController.storyboard; sourceTree = "<group>"; };
+		01C2BDC5215CE18A002C024B /* MusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
+		01C2BDC6215CE18A002C024B /* MusicListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicListViewController.xib; sourceTree = "<group>"; };
 		3AB5DB752133DC11003A30E1 /* MySwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB5DB782133DC11003A30E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB5DB7A2133DC11003A30E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +157,26 @@
 			path = ScrollViewDemo;
 			sourceTree = "<group>";
 		};
+		01C2BD6C215C6A68002C024B /* RxtableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				01C2BD6D215C6A8E002C024B /* Music.swift */,
+				01C2BD6F215C6B93002C024B /* MusicLists.swift */,
+				01C2BD71215C6CCA002C024B /* MusicListsViewController.swift */,
+				01C2BD7E215CA865002C024B /* MusicListsViewController.storyboard */,
+			);
+			name = RxtableViewDemo;
+			sourceTree = "<group>";
+		};
+		01C2BDC4215CE158002C024B /* AnotherRxtableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				01C2BDC5215CE18A002C024B /* MusicListViewController.swift */,
+				01C2BDC6215CE18A002C024B /* MusicListViewController.xib */,
+			);
+			name = AnotherRxtableViewDemo;
+			sourceTree = "<group>";
+		};
 		3AB5DB6C2133DC10003A30E1 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +202,8 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				01C2BDC4215CE158002C024B /* AnotherRxtableViewDemo */,
+				01C2BD6C215C6A68002C024B /* RxtableViewDemo */,
 				0142220A2152236F0091027F /* Enumeration */,
 				017B7BB2213EE8F000A1671B /* ScrollViewDemo */,
 				0105583D2138D0D500425D92 /* RxswiftDemo */,
@@ -235,7 +269,6 @@
 				3AB5DB722133DC10003A30E1 /* Frameworks */,
 				3AB5DB732133DC10003A30E1 /* Resources */,
 				5E5E612EB18FD18D67395DA3 /* [CP] Embed Pods Frameworks */,
-				DE1C9F94346240B02CA310E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,7 +363,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C2BDC8215CE18A002C024B /* MusicListViewController.xib in Resources */,
 				3AB5DB832133DC13003A30E1 /* LaunchScreen.storyboard in Resources */,
+				01C2BD7F215CA865002C024B /* MusicListsViewController.storyboard in Resources */,
 				3AB5DB802133DC13003A30E1 /* Assets.xcassets in Resources */,
 				017B7BB8213EE95B00A1671B /* DemoScrollViewController.xib in Resources */,
 				3AB5DB7E2133DC11003A30E1 /* Main.storyboard in Resources */,
@@ -393,21 +428,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DE1C9F94346240B02CA310E4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MySwiftDemo/Pods-MySwiftDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -418,8 +438,12 @@
 				0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */,
 				3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */,
 				017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */,
+				01C2BD70215C6B93002C024B /* MusicLists.swift in Sources */,
 				3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */,
+				01C2BD6E215C6A8E002C024B /* Music.swift in Sources */,
+				01C2BDC7215CE18A002C024B /* MusicListViewController.swift in Sources */,
 				0142220C2152238F0091027F /* EnumerationViewController.swift in Sources */,
+				01C2BD73215C6CCA002C024B /* MusicListsViewController.swift in Sources */,
 				3AB5DBAC2133F573003A30E1 /* MyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

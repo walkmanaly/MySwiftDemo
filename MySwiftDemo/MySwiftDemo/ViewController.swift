@@ -96,7 +96,10 @@ extension ViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let rxVc = MyRxswiftViewController()
+//        let rxVc = MyRxswiftViewController()
+//        let rxVc = MyGCDDemoViewController()
+//        let rxVc = UIStoryboard(name: "MusicListsViewController", bundle: nil) .instantiateViewController(withIdentifier: "MusicListsViewController")
+        let rxVc = MusicListViewController()
         navigationController?.pushViewController(rxVc, animated: true)
     }
     

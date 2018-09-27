@@ -10,8 +10,10 @@ import UIKit
 
 class EnumerationViewController: UIViewController {
 
-    enum season {
-        case spring
+    // rawValue and associatedValue
+    
+    enum season: Int {
+        case spring = 1
         case summer
         case fall
         case winter
@@ -29,6 +31,7 @@ class EnumerationViewController: UIViewController {
         view.backgroundColor = UIColor.gray
         // Do any additional setup after loading the view.
         testEnum()
+        print(season.spring.rawValue)
     }
     
     func testEnum() {
