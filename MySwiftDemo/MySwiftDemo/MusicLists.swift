@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 struct MusicLists {
-    let data = Observable.just([
+    let data = Observable<[Music]>.just([
         Music(name: "陈奕迅", song: "浮夸"),
         Music(name: "Mr.", song: "森林"),
         Music(name: "Westlife", song: "mylove"),

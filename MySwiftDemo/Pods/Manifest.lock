@@ -1,21 +1,40 @@
 PODS:
+  - Alamofire (4.7.3)
+  - PromiseKit (6.4.1):
+    - PromiseKit/CorePromise (= 6.4.1)
+    - PromiseKit/Foundation (= 6.4.1)
+    - PromiseKit/UIKit (= 6.4.1)
+  - PromiseKit/Alamofire (6.4.1):
+    - Alamofire (~> 4.0)
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.4.1)
+  - PromiseKit/Foundation (6.4.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.4.1):
+    - PromiseKit/CorePromise
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
 
 DEPENDENCIES:
+  - PromiseKit (~> 6.0)
+  - PromiseKit/Alamofire
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - PromiseKit
     - RxCocoa
     - RxSwift
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  PromiseKit: 4c76a6506638034e3d7bede97b2ff7743f7bd2dc
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: e69cdff101012ec0be829ba96e357ba973cb9184
+PODFILE CHECKSUM: 81d0b4697be64f2e2fa575005b79da739fa7dca6
 
 COCOAPODS: 1.5.3

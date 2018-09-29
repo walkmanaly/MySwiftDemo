@@ -21,6 +21,21 @@ class MusicListsViewController: UIViewController {
         let musicList = MusicLists()
         let disposeBag = DisposeBag()
         
+//        let nums = Observable.of(1, 2, 3, 4, 5)
+//        nums.subscribe (
+//            onNext: {
+//                event in
+//                print(event)
+//        },
+//            onError: {
+//                error in
+//                print(error)
+//        },
+//            onCompleted: {
+//                print("completed")
+//        }
+//            ).disposed(by: disposeBag)
+        
         musicList.data.bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (index, music, cell) in
             // configcell
             print("\(index)   \(music.name)   \(music.song)")
