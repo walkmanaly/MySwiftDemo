@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */; };
+		012424A921605E3C0007818D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012424A821605E3C0007818D /* Person.swift */; };
+		012424AB21605F3D0007818D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012424AA21605F3D0007818D /* Friend.swift */; };
+		012424AE216066C80007818D /* LasyPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012424AD216066C80007818D /* LasyPropertyViewController.swift */; };
+		012424B72160679E0007818D /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012424B62160679E0007818D /* Rect.swift */; };
+		012424B92160A5930007818D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 012424B82160A5930007818D /* GoogleService-Info.plist */; };
 		0142220C2152238F0091027F /* EnumerationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142220B2152238F0091027F /* EnumerationViewController.swift */; };
 		017B7BB4213EE93000A1671B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 017B7BB3213EE93000A1671B /* test.png */; };
 		017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */; };
@@ -48,6 +53,11 @@
 
 /* Begin PBXFileReference section */
 		0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRxswiftViewController.swift; sourceTree = "<group>"; };
+		012424A821605E3C0007818D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		012424AA21605F3D0007818D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		012424AD216066C80007818D /* LasyPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LasyPropertyViewController.swift; sourceTree = "<group>"; };
+		012424B62160679E0007818D /* Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
+		012424B82160A5930007818D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0142220B2152238F0091027F /* EnumerationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationViewController.swift; sourceTree = "<group>"; };
 		017B7BB3213EE93000A1671B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				017B7BB3213EE93000A1671B /* test.png */,
+				012424B82160A5930007818D /* GoogleService-Info.plist */,
 				3AB5DB7C2133DC11003A30E1 /* Main.storyboard */,
 				3AB5DB7F2133DC13003A30E1 /* Assets.xcassets */,
 				3AB5DB812133DC13003A30E1 /* LaunchScreen.storyboard */,
@@ -138,6 +149,24 @@
 				0105583E2138D0F900425D92 /* MyRxswiftViewController.swift */,
 			);
 			name = RxswiftDemo;
+			sourceTree = "<group>";
+		};
+		012424AC216066550007818D /* LasyProperty */ = {
+			isa = PBXGroup;
+			children = (
+				012424AA21605F3D0007818D /* Friend.swift */,
+				012424A821605E3C0007818D /* Person.swift */,
+				012424AD216066C80007818D /* LasyPropertyViewController.swift */,
+			);
+			name = LasyProperty;
+			sourceTree = "<group>";
+		};
+		012424AF216066E40007818D /* ComputedProperty */ = {
+			isa = PBXGroup;
+			children = (
+				012424B62160679E0007818D /* Rect.swift */,
+			);
+			name = ComputedProperty;
 			sourceTree = "<group>";
 		};
 		0142220A2152236F0091027F /* Enumeration */ = {
@@ -202,6 +231,8 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				012424AF216066E40007818D /* ComputedProperty */,
+				012424AC216066550007818D /* LasyProperty */,
 				01C2BDC4215CE158002C024B /* AnotherRxtableViewDemo */,
 				01C2BD6C215C6A68002C024B /* RxtableViewDemo */,
 				0142220A2152236F0091027F /* Enumeration */,
@@ -364,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C2BDC8215CE18A002C024B /* MusicListViewController.xib in Resources */,
+				012424B92160A5930007818D /* GoogleService-Info.plist in Resources */,
 				3AB5DB832133DC13003A30E1 /* LaunchScreen.storyboard in Resources */,
 				01C2BD7F215CA865002C024B /* MusicListsViewController.storyboard in Resources */,
 				3AB5DB802133DC13003A30E1 /* Assets.xcassets in Resources */,
@@ -398,16 +430,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MySwiftDemo/Pods-MySwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -441,8 +477,12 @@
 			files = (
 				0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */,
 				3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */,
+				012424B72160679E0007818D /* Rect.swift in Sources */,
+				012424AE216066C80007818D /* LasyPropertyViewController.swift in Sources */,
 				017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */,
+				012424AB21605F3D0007818D /* Friend.swift in Sources */,
 				01C2BD70215C6B93002C024B /* MusicLists.swift in Sources */,
+				012424A921605E3C0007818D /* Person.swift in Sources */,
 				3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */,
 				01C2BD6E215C6A8E002C024B /* Music.swift in Sources */,
 				01C2BDC7215CE18A002C024B /* MusicListViewController.swift in Sources */,

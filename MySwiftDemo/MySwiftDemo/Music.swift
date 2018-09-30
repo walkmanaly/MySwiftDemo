@@ -12,10 +12,10 @@ struct Music {
     var name: String
     var song: String
     
-    init(name: String, song: String) {
-        self.name = name
-        self.song = song
-    }
+//    init(name: String, song: String) {
+//        self.name = name
+//        self.song = song
+//    }
 }
 
 extension Music: CustomStringConvertible {
