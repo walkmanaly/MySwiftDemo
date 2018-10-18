@@ -13,6 +13,9 @@
 		012424AE216066C80007818D /* LasyPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012424AD216066C80007818D /* LasyPropertyViewController.swift */; };
 		012424B72160679E0007818D /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012424B62160679E0007818D /* Rect.swift */; };
 		012424B92160A5930007818D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 012424B82160A5930007818D /* GoogleService-Info.plist */; };
+		0141B68321771765000326EF /* UISearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141B68221771765000326EF /* UISearchViewController.swift */; };
+		0141B68521771B7C000326EF /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141B68421771B7C000326EF /* SearchResultViewController.swift */; };
+		0141B6872177237C000326EF /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0141B6862177237C000326EF /* Countries.swift */; };
 		0142220C2152238F0091027F /* EnumerationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142220B2152238F0091027F /* EnumerationViewController.swift */; };
 		017B7BB4213EE93000A1671B /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 017B7BB3213EE93000A1671B /* test.png */; };
 		017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */; };
@@ -59,6 +62,9 @@
 		012424AD216066C80007818D /* LasyPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LasyPropertyViewController.swift; sourceTree = "<group>"; };
 		012424B62160679E0007818D /* Rect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
 		012424B82160A5930007818D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0141B68221771765000326EF /* UISearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchViewController.swift; sourceTree = "<group>"; };
+		0141B68421771B7C000326EF /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		0141B6862177237C000326EF /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		0142220B2152238F0091027F /* EnumerationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationViewController.swift; sourceTree = "<group>"; };
 		017B7BB3213EE93000A1671B /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		017B7BB5213EE95B00A1671B /* DemoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScrollViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +177,16 @@
 			name = ComputedProperty;
 			sourceTree = "<group>";
 		};
+		0141B6812177170C000326EF /* UISearch */ = {
+			isa = PBXGroup;
+			children = (
+				0141B6862177237C000326EF /* Countries.swift */,
+				0141B68221771765000326EF /* UISearchViewController.swift */,
+				0141B68421771B7C000326EF /* SearchResultViewController.swift */,
+			);
+			name = UISearch;
+			sourceTree = "<group>";
+		};
 		0142220A2152236F0091027F /* Enumeration */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +257,7 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0141B6812177170C000326EF /* UISearch */,
 				01ECD0A32176C79100B2C557 /* Codable */,
 				012424AF216066E40007818D /* ComputedProperty */,
 				012424AC216066550007818D /* LasyProperty */,
@@ -490,14 +507,17 @@
 				01ECD0A52176C7CE00B2C557 /* CodableViewController.swift in Sources */,
 				3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */,
 				012424B72160679E0007818D /* Rect.swift in Sources */,
+				0141B6872177237C000326EF /* Countries.swift in Sources */,
 				012424AE216066C80007818D /* LasyPropertyViewController.swift in Sources */,
 				017B7BB7213EE95B00A1671B /* DemoScrollViewController.swift in Sources */,
 				012424AB21605F3D0007818D /* Friend.swift in Sources */,
 				01C2BD70215C6B93002C024B /* MusicLists.swift in Sources */,
 				012424A921605E3C0007818D /* Person.swift in Sources */,
 				3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */,
+				0141B68321771765000326EF /* UISearchViewController.swift in Sources */,
 				01C2BD6E215C6A8E002C024B /* Music.swift in Sources */,
 				01C2BDC7215CE18A002C024B /* MusicListViewController.swift in Sources */,
+				0141B68521771B7C000326EF /* SearchResultViewController.swift in Sources */,
 				0142220C2152238F0091027F /* EnumerationViewController.swift in Sources */,
 				01C2BD73215C6CCA002C024B /* MusicListsViewController.swift in Sources */,
 				3AB5DBAC2133F573003A30E1 /* MyTableViewCell.swift in Sources */,
