@@ -58,4 +58,7 @@ extension UISearchViewController: UITableViewDataSource {
 }
 
 extension UISearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("did select \(indexPath.row)")
+    }
 }
