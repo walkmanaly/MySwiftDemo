@@ -28,6 +28,7 @@
 		01C2BDC8215CE18A002C024B /* MusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C2BDC6215CE18A002C024B /* MusicListViewController.xib */; };
 		01ECD0A52176C7CE00B2C557 /* CodableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECD0A42176C7CE00B2C557 /* CodableViewController.swift */; };
 		01F5923C21EF892700377533 /* TupleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5923B21EF892700377533 /* TupleTest.swift */; };
+		01F5923F21EF8C1F00377533 /* ComputedPropertyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5923E21EF8C1F00377533 /* ComputedPropertyTest.swift */; };
 		3AB5DB792133DC11003A30E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB782133DC11003A30E1 /* AppDelegate.swift */; };
 		3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB5DB7A2133DC11003A30E1 /* ViewController.swift */; };
 		3AB5DB7E2133DC11003A30E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AB5DB7C2133DC11003A30E1 /* Main.storyboard */; };
@@ -78,6 +79,7 @@
 		01C2BDC6215CE18A002C024B /* MusicListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicListViewController.xib; sourceTree = "<group>"; };
 		01ECD0A42176C7CE00B2C557 /* CodableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableViewController.swift; sourceTree = "<group>"; };
 		01F5923B21EF892700377533 /* TupleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TupleTest.swift; sourceTree = "<group>"; };
+		01F5923E21EF8C1F00377533 /* ComputedPropertyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedPropertyTest.swift; sourceTree = "<group>"; };
 		3AB5DB752133DC11003A30E1 /* MySwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AB5DB782133DC11003A30E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AB5DB7A2133DC11003A30E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -242,6 +244,14 @@
 			name = Tuple;
 			sourceTree = "<group>";
 		};
+		01F5923D21EF8BF400377533 /* ComputedProperty */ = {
+			isa = PBXGroup;
+			children = (
+				01F5923E21EF8C1F00377533 /* ComputedPropertyTest.swift */,
+			);
+			name = ComputedProperty;
+			sourceTree = "<group>";
+		};
 		3AB5DB6C2133DC10003A30E1 = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +277,7 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				01F5923D21EF8BF400377533 /* ComputedProperty */,
 				01F5923A21EF890B00377533 /* Tuple */,
 				0141B6812177170C000326EF /* UISearch */,
 				01ECD0A32176C79100B2C557 /* Codable */,
@@ -517,6 +528,7 @@
 				01F5923C21EF892700377533 /* TupleTest.swift in Sources */,
 				0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */,
 				01ECD0A52176C7CE00B2C557 /* CodableViewController.swift in Sources */,
+				01F5923F21EF8C1F00377533 /* ComputedPropertyTest.swift in Sources */,
 				3AB5DB7B2133DC11003A30E1 /* ViewController.swift in Sources */,
 				012424B72160679E0007818D /* Rect.swift in Sources */,
 				0141B6872177237C000326EF /* Countries.swift in Sources */,
