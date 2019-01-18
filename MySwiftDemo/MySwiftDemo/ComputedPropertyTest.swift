@@ -22,6 +22,11 @@ class MyFeture {
             self.height = self.height + newValue
         }
     }
+    
+    // 如果是只读属性，不需要写get
+    var myHeight: Float {
+        return self.height
+    }
 }
 
 
