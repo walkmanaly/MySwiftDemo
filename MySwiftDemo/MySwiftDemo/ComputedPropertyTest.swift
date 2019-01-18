@@ -27,6 +27,15 @@ class MyFeture {
     var myHeight: Float {
         return self.height
     }
+    
+    // 计算型属性，不允许只有set而没有get：编译器报错
+    /*
+    var myWeight: Float {
+        set {
+            self.weight = newValue
+        }
+    }
+ */
 }
 
 
