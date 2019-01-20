@@ -1,0 +1,12 @@
+
+%{ abilities = ['strength', 'dexterity', 'constitution',
+                'intelligence', 'wisdom', 'charisma']
+}%
+
+class MyCharacter {
+  var name: String?
+
+% for ability in abilities:
+  var ${ability}: Int?
+% end
+}

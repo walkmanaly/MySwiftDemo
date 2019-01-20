@@ -26,6 +26,10 @@
 		01C2BD7F215CA865002C024B /* MusicListsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C2BD7E215CA865002C024B /* MusicListsViewController.storyboard */; };
 		01C2BDC7215CE18A002C024B /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C2BDC5215CE18A002C024B /* MusicListViewController.swift */; };
 		01C2BDC8215CE18A002C024B /* MusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01C2BDC6215CE18A002C024B /* MusicListViewController.xib */; };
+		01E2FF2E21F4C2F10091B41D /* TestGYB.swift.gyb in Resources */ = {isa = PBXBuildFile; fileRef = 01E2FF2D21F4C2F10091B41D /* TestGYB.swift.gyb */; };
+		01E2FF3621F4CC790091B41D /* gyb.py in Resources */ = {isa = PBXBuildFile; fileRef = 01E2FF3421F4CC790091B41D /* gyb.py */; };
+		01E2FF3721F4CC790091B41D /* gyb in Resources */ = {isa = PBXBuildFile; fileRef = 01E2FF3521F4CC790091B41D /* gyb */; };
+		01E2FF3D21F4D0980091B41D /* TestGYB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E2FF3C21F4D0980091B41D /* TestGYB.swift */; };
 		01ECD0A52176C7CE00B2C557 /* CodableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ECD0A42176C7CE00B2C557 /* CodableViewController.swift */; };
 		01F5923C21EF892700377533 /* TupleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5923B21EF892700377533 /* TupleTest.swift */; };
 		01F5923F21EF8C1F00377533 /* ComputedPropertyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F5923E21EF8C1F00377533 /* ComputedPropertyTest.swift */; };
@@ -77,6 +81,10 @@
 		01C2BD7E215CA865002C024B /* MusicListsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicListsViewController.storyboard; sourceTree = "<group>"; };
 		01C2BDC5215CE18A002C024B /* MusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
 		01C2BDC6215CE18A002C024B /* MusicListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicListViewController.xib; sourceTree = "<group>"; };
+		01E2FF2D21F4C2F10091B41D /* TestGYB.swift.gyb */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestGYB.swift.gyb; sourceTree = "<group>"; };
+		01E2FF3421F4CC790091B41D /* gyb.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = gyb.py; sourceTree = "<group>"; };
+		01E2FF3521F4CC790091B41D /* gyb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gyb; sourceTree = "<group>"; };
+		01E2FF3C21F4D0980091B41D /* TestGYB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestGYB.swift; sourceTree = "<group>"; };
 		01ECD0A42176C7CE00B2C557 /* CodableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableViewController.swift; sourceTree = "<group>"; };
 		01F5923B21EF892700377533 /* TupleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TupleTest.swift; sourceTree = "<group>"; };
 		01F5923E21EF8C1F00377533 /* ComputedPropertyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputedPropertyTest.swift; sourceTree = "<group>"; };
@@ -228,6 +236,24 @@
 			name = AnotherRxtableViewDemo;
 			sourceTree = "<group>";
 		};
+		01E2FF2C21F4C2CB0091B41D /* GYB */ = {
+			isa = PBXGroup;
+			children = (
+				01E2FF3C21F4D0980091B41D /* TestGYB.swift */,
+				01E2FF2D21F4C2F10091B41D /* TestGYB.swift.gyb */,
+			);
+			name = GYB;
+			sourceTree = "<group>";
+		};
+		01E2FF3321F4CC790091B41D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				01E2FF3421F4CC790091B41D /* gyb.py */,
+				01E2FF3521F4CC790091B41D /* gyb */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
 		01ECD0A32176C79100B2C557 /* Codable */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +281,7 @@
 		3AB5DB6C2133DC10003A30E1 = {
 			isa = PBXGroup;
 			children = (
+				01E2FF3321F4CC790091B41D /* Vendor */,
 				3AB5DB772133DC11003A30E1 /* MySwiftDemo */,
 				3AB5DB8C2133DC13003A30E1 /* MySwiftDemoTests */,
 				3AB5DB972133DC13003A30E1 /* MySwiftDemoUITests */,
@@ -277,6 +304,7 @@
 		3AB5DB772133DC11003A30E1 /* MySwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				01E2FF2C21F4C2CB0091B41D /* GYB */,
 				01F5923D21EF8BF400377533 /* ComputedProperty */,
 				01F5923A21EF890B00377533 /* Tuple */,
 				0141B6812177170C000326EF /* UISearch */,
@@ -350,6 +378,7 @@
 				3AB5DB722133DC10003A30E1 /* Frameworks */,
 				3AB5DB732133DC10003A30E1 /* Resources */,
 				5E5E612EB18FD18D67395DA3 /* [CP] Embed Pods Frameworks */,
+				01E2FF2B21F4C0D60091B41D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -449,7 +478,10 @@
 				3AB5DB832133DC13003A30E1 /* LaunchScreen.storyboard in Resources */,
 				01C2BD7F215CA865002C024B /* MusicListsViewController.storyboard in Resources */,
 				3AB5DB802133DC13003A30E1 /* Assets.xcassets in Resources */,
+				01E2FF3621F4CC790091B41D /* gyb.py in Resources */,
 				017B7BB8213EE95B00A1671B /* DemoScrollViewController.xib in Resources */,
+				01E2FF3721F4CC790091B41D /* gyb in Resources */,
+				01E2FF2E21F4C2F10091B41D /* TestGYB.swift.gyb in Resources */,
 				3AB5DB7E2133DC11003A30E1 /* Main.storyboard in Resources */,
 				017B7BB4213EE93000A1671B /* test.png in Resources */,
 			);
@@ -472,6 +504,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01E2FF2B21F4C0D60091B41D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "find . -name '*.gyb' | while read file; do ./Vendor/gyb --line-directive '' -o \"${file%.gyb}\" \"$file\"; done\n";
+		};
 		5E5E612EB18FD18D67395DA3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -525,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E2FF3D21F4D0980091B41D /* TestGYB.swift in Sources */,
 				01F5923C21EF892700377533 /* TupleTest.swift in Sources */,
 				0105583F2138D0F900425D92 /* MyRxswiftViewController.swift in Sources */,
 				01ECD0A52176C7CE00B2C557 /* CodableViewController.swift in Sources */,
